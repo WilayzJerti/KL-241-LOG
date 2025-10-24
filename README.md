@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue?logo=python)
 ![Docker](https://img.shields.io/badge/Docker-Required-blue?logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-green)
-
+![Language EN](https://github.com/WilayzJerti/KL-241-LOG/blob/main/README.md)
 ---
 
 ## 🌟 Возможности
@@ -26,17 +26,28 @@
 Выполните **одну команду** в терминале:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/WilayzJerti/KL-241-LOG/main/install.sh | bash -s "ВАШ_ТОКЕН_БОТА" "ID_ТЕКСТОВОГО_КАНАЛА"
+curl -fsSL https://raw.githubusercontent.com/WilayzJerti/KL-241-LOG/main/install.sh | bash -s "ВАШ_ТОКЕН_БОТА" "ID_ТЕКСТОВОГО_КАНАЛА" "Язык"
 ```
 
-🔑 Где взять данные?   
+
+
+**🔑 Где взять данные?**   
   - Токен бота: [Discord Developer Portal → Applications → Bot → Token](https://discord.com/developers/applications?spm=a2ty_o01.29997173.0.0.59cb5171Rbn7to "Discord Developer")
         
   - ID канала: Включите режим разработчика в Discord  → ПКМ по каналу → «Копировать ID»
 
-Пример:
+
+
+**🌍 Выбор языка:**
+
+Поддерживаются два языка логов: 
+
+  - ru — русский
+  - en — английский
+      
+Пример комады запуска:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/WilayzJerti/KL-241-LOG/main/install.sh | bash -s "abc123.xYz_DEF456" "987654321098765432"
+curl -fsSL https://raw.githubusercontent.com/WilayzJerti/KL-241-LOG/main/install.sh | bash -s "abc123.xYz_DEF456" "987654321098765432" "ru"
 ```
 *✅ После выполнения бот запустится в фоне и начнёт писать логи!*
 
@@ -49,11 +60,19 @@ curl -fsSL https://raw.githubusercontent.com/WilayzJerti/KL-241-LOG/main/install
    git clone https://github.com/WilayzJerti/KL-241-LOG
    cd KL-241-LOG
    ```
-2. Соберите образ:
+2. Выберите нужную языковую версию бота и переименуйте её в bot.py:
+   ```bash
+    # Для русского языка:
+    cp bot_ru.py bot.py
+
+    # Или для английского:
+    cp bot_en.py bot.py
+   ```
+3. Соберите образ:
    ```bash
    docker build -t kl-241-log .
    ```
-3. Запустите контейнер:
+4. Запустите контейнер:
    ```bash
    docker run -d \
    --name kl-241-log \
