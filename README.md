@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue?logo=python)
 ![Docker](https://img.shields.io/badge/Docker-Required-blue?logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Language EN](https://github.com/WilayzJerti/KL-241-LOG/blob/main/README.md)
+![Русский язык](https://github.com/WilayzJerti/KL-241-LOG/blob/main/README_RU.md)
 ---
 
 ## 🌟 Features
