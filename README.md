@@ -6,6 +6,10 @@
 ![Docker](https://img.shields.io/badge/Docker-Required-blue?logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Русский язык](https://github.com/WilayzJerti/KL-241-LOG/blob/main/README_RU.md)
+
+<img width="1182" height="264" alt="изображение" src="https://github.com/user-attachments/assets/87ae723c-4cd3-4c3c-a952-03eb28dfd6c6" />
+
+
 ---
 
 ## 🌟 Features
